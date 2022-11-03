@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/horror dialogue text sound.mp3-0bb377b1f651fd4846fe2b18c2dc169b.mp3str"
+
+[deps]
+
+source_file="res://Audio/FX/horror dialogue text sound.mp3"
+dest_files=[ "res://.import/horror dialogue text sound.mp3-0bb377b1f651fd4846fe2b18c2dc169b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

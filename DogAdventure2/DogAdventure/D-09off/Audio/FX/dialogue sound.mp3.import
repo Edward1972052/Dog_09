@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/dialogue sound.mp3-b4f0b56aad88a94c986917d62c563708.mp3str"
+
+[deps]
+
+source_file="res://Audio/FX/dialogue sound.mp3"
+dest_files=[ "res://.import/dialogue sound.mp3-b4f0b56aad88a94c986917d62c563708.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

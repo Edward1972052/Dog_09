@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sound chase epic cello contrabass horror theme.mp3-c2039df4474388d29e466cbb0a44da96.mp3str"
+
+[deps]
+
+source_file="res://Audio/Horror/sound chase epic cello contrabass horror theme.mp3"
+dest_files=[ "res://.import/sound chase epic cello contrabass horror theme.mp3-c2039df4474388d29e466cbb0a44da96.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
