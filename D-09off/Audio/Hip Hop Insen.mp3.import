@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Hip Hop Insen.mp3-26543d2c69997ccb5c6bd583389534fd.mp3str"
+
+[deps]
+
+source_file="res://Audio/Hip Hop Insen.mp3"
+dest_files=[ "res://.import/Hip Hop Insen.mp3-26543d2c69997ccb5c6bd583389534fd.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

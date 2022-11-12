@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/game over.mp3-d851a1acc650e37c601ff5a9abb1a061.mp3str"
+
+[deps]
+
+source_file="res://Audio/FX/game over.mp3"
+dest_files=[ "res://.import/game over.mp3-d851a1acc650e37c601ff5a9abb1a061.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
