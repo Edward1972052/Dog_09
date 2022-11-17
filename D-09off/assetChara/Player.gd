@@ -12,11 +12,14 @@ func _ready():
 
 var mov_speed = 100
 
+var isDead = false
+
 func _physics_process(delta):
-	var movement = Vector2.ZERO
-	movement.x = Input.get_axis("ui_left","ui_right")
-	movement.y = Input.get_axis("ui_up","ui_down")
-	move_and_slide(movement*mov_speed)
+	if (!isDead):
+		var movement = Vector2.ZERO
+		movement.x = Input.get_axis("ui_left","ui_right")
+		movement.y = Input.get_axis("ui_up","ui_down")
+		move_and_slide(movement*mov_speed)
 	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

@@ -1,24 +1,22 @@
 extends KinematicBody2D
 
+onready var player = get_node("../Floors/Doggo")
+onready var monster1 = get_node(".")
+onready var monster1Sprite = get_node("./AnimatedSprite")
 
-var _player = null
-const CHASE_SPEED = 200
-onready var player = get_node("Doggo")
+var monsterSpeed = 50
 
 func _physics_process(delta):
+	var monsterPos = monster1.position
+	var playerPos = player.position
 	
-	if _player:
-		var player_direction = player.position - self.position
-		if player_direction.x > player_direction.y:
-			player_direction.y = 0
-		else:
-			player_direction.x =0
-		move_and_slide(CHASE_SPEED * player_direction.normalized())
+	var vec = (playerPos - monsterPos).normalized()
+	
+	# ganti animasi monster berdasarkan arah jalan
+	if (vec[0] < 0):
+		monster1Sprite.animation = "walk-left"
+	else:
+		monster1Sprite.animation = "walk-right"
 		
-		
-func _on_DetectPlayer_body_entered(body):
-	if body.name == "Doggo":
-		_player = body
-func _on_DetectPlayer_body_exited(body):
-	if body.name == "Doggo":
-		_player = body
+	#move_and_slide(vec * monsterSpeed)
+	
