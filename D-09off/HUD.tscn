@@ -13,10 +13,6 @@ margin_bottom = 40.0
 
 [node name="MainMenu" type="Button" parent="CanvasLayer/PauseMenu"]
 visible = false
-margin_left = 336.0
-margin_top = 261.0
-margin_right = 680.0
-margin_bottom = 318.0
 rect_pivot_offset = Vector2( 225, 29 )
 text = "Main Menu"
 script = ExtResource( 1 )
