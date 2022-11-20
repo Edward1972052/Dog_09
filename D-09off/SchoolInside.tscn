@@ -806,6 +806,7 @@ position = Vector2( 9.75, 9.75 )
 scale = Vector2( 0.721983, 0.609914 )
 frames = SubResource( 9 )
 animation = "walk-right"
+frame = 1
 speed_scale = 0.2
 playing = true
 
@@ -814,7 +815,7 @@ position = Vector2( 19, 20 )
 shape = SubResource( 10 )
 
 [node name="Monster" type="Area2D" parent="."]
-position = Vector2( 302, 166 )
+position = Vector2( 346, 297 )
 script = ExtResource( 6 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Monster"]
@@ -831,7 +832,6 @@ position = Vector2( 9.75, 9.75 )
 scale = Vector2( 1e-05, 1e-05 )
 frames = SubResource( 9 )
 animation = "walk-right"
-frame = 1
 speed_scale = 0.2
 playing = true
 
