@@ -8,7 +8,11 @@ extends KinematicBody2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	var scene = get_tree().get_current_scene().get_name()
+	if (scene == "School"):
+		# set limit kamera agar tidak ngebug saat di school scene
+		$Camera2D.limit_top = -10000000	#disesuaikan lagi nanti sama si scene nya
+		$Camera2D.limit_left = -1000
 
 var mov_speed = 100
 
