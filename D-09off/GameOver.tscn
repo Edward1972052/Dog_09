@@ -4,7 +4,7 @@
 [ext_resource path="res://Audio/FX/game over.mp3" type="AudioStream" id=2]
 [ext_resource path="res://Game Over Button.gd" type="Script" id=3]
 
-[node name="Node2D" type="Node2D"]
+[node name="Game Over Node" type="Node2D"]
 
 [node name="Game Over Title" type="Sprite" parent="."]
 position = Vector2( 514.558, 269.5 )
@@ -24,5 +24,5 @@ margin_bottom = 74.0
 text = "Play Again"
 script = ExtResource( 3 )
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="Game Over" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 2 )

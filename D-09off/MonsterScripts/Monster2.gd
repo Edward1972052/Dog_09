@@ -26,6 +26,8 @@ func startChase():
 
 func _on_Monster2_body_entered(body):
 	if (body.get_name() == "Doggo"):
+		get_node("../Chase Sound").stop()
 		chase = !chase
 		body.isDead = true
 		get_node("../CanvasLayer").show()
+		get_node("../CanvasLayer/Node2D").get_child(2).play()
