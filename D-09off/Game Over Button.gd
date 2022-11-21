@@ -11,7 +11,7 @@ func _ready():
 	menuButton.connect("pressed", self, "mainMenu")
 	
 func mainMenu():
+	get_node("../../Click Sound Effect").play()
+	# TODO: Animation fade to black
 	get_tree().change_scene("res://MainMenu.tscn")
 
-
-	
