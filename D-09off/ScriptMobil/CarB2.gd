@@ -9,5 +9,5 @@ func _process(delta):
 
 func _on_Mobil_body_entered(body):
 	get_node("../CanvasLayer").show()
-	get_node("../CanvasLayer/GameOver").get_child(2).play()
+	get_node("../CanvasLayer/Game Over Node").get_child(2).play()
 	get_node("../TileMap/building/KinematicBody2D").isDead = true
