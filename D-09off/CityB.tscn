@@ -1,9 +1,10 @@
-[gd_scene load_steps=214 format=2]
+[gd_scene load_steps=215 format=2]
 
 [ext_resource path="res://Doggo.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Mapper.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Mapper2.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Audio/jazz smooth.mp3" type="AudioStream" id=4]
+[ext_resource path="res://HUD.tscn" type="PackedScene" id=5]
 [ext_resource path="res://AssetMap/outdoors.png" type="Texture" id=19]
 
 [sub_resource type="TileSet" id=1]
@@ -2959,3 +2960,5 @@ position = Vector2( 859, 316 )
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
 autoplay = true
+
+[node name="Node2D" parent="." instance=ExtResource( 5 )]

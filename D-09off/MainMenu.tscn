@@ -20,6 +20,7 @@ margin_right = 529.0
 margin_bottom = 312.0
 
 [node name="PlayButton" type="Button" parent="Control"]
+pause_mode = 2
 margin_left = -60.0
 margin_top = 41.0
 margin_right = 128.0
