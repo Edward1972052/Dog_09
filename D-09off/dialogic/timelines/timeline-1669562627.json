@@ -1,0 +1,116 @@
+{
+	"events": [
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1669562491.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1669562491.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "huh ?\nWhere am I ?\nI don't remember being short...\nWhat’s with this cute paw ?\nwait......this..this is MY HAND !?!?!?"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "",
+			"volume": 0
+		},
+		{
+			"character": "character-1669562491.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Did i.. did I become a dog ???\nthis..... this can't be real !!\nam i dreaming ?\n"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "",
+			"volume": 0
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1
+		},
+		{
+			"character": "character-1669562491.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "ouch\nokay, this is real aaaaand bitting own tongue to wake up is quite bad idea"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1
+		},
+		{
+			"character": "character-1669562491.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "okay, let's be calm and think about this situation\n.......okay last time i remember i was at school, i was studying as usual, and when the bell ring there's suddenly a blackout in school"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1
+		},
+		{
+			"character": "character-1669562491.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": " wait a blackout ?"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 0.5
+		},
+		{
+			"character": "character-1669562491.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "blackout in morning class ? \ni'm pretty sure the windows are opened\n and its sunny outside\n…..oh i think that's where my memory end"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1
+		},
+		{
+			"character": "character-1669562491.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "okay i have two options now, i can try to go to my family in City B and ask for help or go to school in City C where my memory end"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1669562627.json",
+		"name": "Begin"
+	}
+}

@@ -1,0 +1,75 @@
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1669607519.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hey\nYou're new around here dont'cha\nalright, you better give me your food or i'll make sure my face is the last thing you ever see"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1
+		},
+		{
+			"character": "character-1669562491.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "(what ? i can understand what this dog speaking ?)\n(oh yeah, im a dog now huh)\nsorry but i really dont have food"
+		},
+		{
+			"character": "character-1669607519.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "So you have chosen death"
+		},
+		{
+			"character": "character-1669562491.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "WAIT, i have food but didn't bring them\nso if you let me go, i can bring them to you"
+		},
+		{
+			"character": "character-1669607519.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "alright then, but you better fast"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1
+		},
+		{
+			"character": "character-1669562491.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "fiuh okay, looking in my situation right now, i can try to find food in the trash can for the big dog or i can just ignore this and go with my day"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1669607493.json",
+		"name": "BigDogQuest"
+	}
+}
