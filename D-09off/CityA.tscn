@@ -2766,4 +2766,4 @@ visible = false
 [node name="Game Over Node" parent="CanvasLayer" instance=ExtResource( 5 )]
 
 [node name="Area2D" type="Area2D" parent="."]
-position = Vector2( 1128, 288 )
+position = Vector2( 593, 691 )

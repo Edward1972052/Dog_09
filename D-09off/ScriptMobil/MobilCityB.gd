@@ -7,7 +7,6 @@ func _ready():
 	while true:
 		var mobil = load("res://CarB.tscn").instance()
 		mobil.set_position(Vector2(96, -48))
-		mobil.set_rotation(PI)
 		var texture = rand.randi_range(0, 2) # 0 > red, 1 > green, 2 > blue
 		match (texture):
 			0:
@@ -31,4 +30,4 @@ func _ready():
 				mobil2.get_node("Mobil/Sprite").texture = load("res://AssetMap/blueCar.png")
 		
 		add_child(mobil2)
-		yield(get_tree().create_timer(2.0), "timeout")
+		yield(get_tree().create_timer(3.0), "timeout")
