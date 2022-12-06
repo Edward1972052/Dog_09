@@ -794,5 +794,4 @@ position = Vector2( 665, 186 )
 shape = SubResource( 12 )
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 1 )]
-visible = false
 position = Vector2( 366, 355 )
