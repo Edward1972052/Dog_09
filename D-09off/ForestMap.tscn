@@ -257,6 +257,14 @@ shape = SubResource( 11 )
 position = Vector2( 686, 145 )
 shape = SubResource( 11 )
 
+[node name="Trees150" type="CollisionShape2D" parent="CollisionBody"]
+position = Vector2( 602, 177 )
+shape = SubResource( 11 )
+
+[node name="Trees151" type="CollisionShape2D" parent="CollisionBody"]
+position = Vector2( 545, 144 )
+shape = SubResource( 11 )
+
 [node name="Trees124" type="CollisionShape2D" parent="CollisionBody"]
 position = Vector2( 714, 176 )
 shape = SubResource( 11 )
@@ -327,6 +335,22 @@ shape = SubResource( 11 )
 
 [node name="Trees137" type="CollisionShape2D" parent="CollisionBody"]
 position = Vector2( 322, 336 )
+shape = SubResource( 11 )
+
+[node name="Trees143" type="CollisionShape2D" parent="CollisionBody"]
+position = Vector2( 266, 400 )
+shape = SubResource( 11 )
+
+[node name="Trees144" type="CollisionShape2D" parent="CollisionBody"]
+position = Vector2( 350, 433 )
+shape = SubResource( 11 )
+
+[node name="Trees145" type="CollisionShape2D" parent="CollisionBody"]
+position = Vector2( 378, 273 )
+shape = SubResource( 11 )
+
+[node name="Trees146" type="CollisionShape2D" parent="CollisionBody"]
+position = Vector2( 321, 240 )
 shape = SubResource( 11 )
 
 [node name="Trees136" type="CollisionShape2D" parent="CollisionBody"]
@@ -573,6 +597,18 @@ shape = SubResource( 12 )
 position = Vector2( 413, 174 )
 shape = SubResource( 12 )
 
+[node name="Trees147" type="CollisionShape2D" parent="CollisionBody"]
+position = Vector2( 357, 162 )
+shape = SubResource( 12 )
+
+[node name="Trees148" type="CollisionShape2D" parent="CollisionBody"]
+position = Vector2( 343, 186 )
+shape = SubResource( 12 )
+
+[node name="Trees149" type="CollisionShape2D" parent="CollisionBody"]
+position = Vector2( 301, 210 )
+shape = SubResource( 12 )
+
 [node name="Trees68" type="CollisionShape2D" parent="CollisionBody"]
 position = Vector2( 455, 150 )
 shape = SubResource( 12 )
@@ -794,4 +830,4 @@ position = Vector2( 665, 186 )
 shape = SubResource( 12 )
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 1 )]
-position = Vector2( 366, 355 )
+position = Vector2( 190, 393 )
