@@ -1,4 +1,4 @@
-[gd_scene load_steps=165 format=2]
+[gd_scene load_steps=168 format=2]
 
 [ext_resource path="res://Mapper.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Doggo.tscn" type="PackedScene" id=2]
@@ -1681,6 +1681,65 @@ points = PoolVector2Array( 11.4058, 45.6767, 11.4837, 44.119, 13.5088, 43.1843, 
 6/shapes = [  ]
 6/z_index = 0
 
+[sub_resource type="Animation" id=193]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../../ColorRect:color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=194]
+resource_name = "fade_out"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=195]
+resource_name = "fade_to_black"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+
 [node name="CityC" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -1718,3 +1777,14 @@ autoplay = true
 position = Vector2( 645, 12 )
 
 [node name="Node2D" parent="." instance=ExtResource( 5 )]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_top = -64.0
+margin_right = 1143.0
+margin_bottom = 687.0
+color = Color( 0, 0, 0, 0 )
+
+[node name="Transition" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 193 )
+anims/fade_out = SubResource( 194 )
+anims/fade_to_black = SubResource( 195 )

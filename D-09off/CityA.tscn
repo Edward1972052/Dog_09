@@ -1,4 +1,4 @@
-[gd_scene load_steps=202 format=2]
+[gd_scene load_steps=205 format=2]
 
 [ext_resource path="res://Mapper.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Doggo.tscn" type="PackedScene" id=2]
@@ -2718,6 +2718,53 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 32, 0, 32 )
 52/shapes = [  ]
 52/z_index = 0
 
+[sub_resource type="Animation" id=223]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=225]
+resource_name = "fade_out"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=224]
+resource_name = "fade_to_black"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+
 [node name="CityA" type="Node2D"]
 script = ExtResource( 6 )
 
@@ -2765,5 +2812,13 @@ visible = false
 
 [node name="Game Over Node" parent="CanvasLayer" instance=ExtResource( 5 )]
 
-[node name="Area2D" type="Area2D" parent="."]
-position = Vector2( 1128, 288 )
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_top = -64.0
+margin_right = 1143.0
+margin_bottom = 687.0
+color = Color( 0, 0, 0, 0 )
+
+[node name="Transition" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 223 )
+anims/fade_out = SubResource( 225 )
+anims/fade_to_black = SubResource( 224 )
